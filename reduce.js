@@ -6,6 +6,33 @@
 
 
 // Summing an array of numbers:
+const nums = [0, 1, 2, 3, 4];
+let sum = nums.reduce((acc, curr) => {
+  console.log(
+    "Accumulator: ", acc,
+    "Current value: ", curr,
+    "Total: ", acc + curr
+  );
+  return acc + curr;
+}, 0);
+console.log(sum)
+
+// Must specify a initial value to start with above is zero below is ten
+const nums1 = [0, 1, 2, 3, 4];
+let sum1 = nums.reduce((acc, curr) => {
+  console.log(
+    "Accumulator: ", acc,
+    "Current value: ", curr,
+    "Total: ", acc + curr
+  );
+  return acc + curr;
+}, 10);
+console.log(sum1)
+
+// Simplified
+const nums2 = [0, 1, 2, 3, 4];
+let sum2 = nums2.reduce((acc, curr) => acc + curr);
+console.log(sum2);
 
 
 const teamMembers = [
